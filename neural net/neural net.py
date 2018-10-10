@@ -9,8 +9,7 @@ from sklearn.model_selection import train_test_split
 
 
 #mnist = input_data.read_data_sets("/tmp/data/", one_hot=True)
-"""mat = sc.loadmat("C:\\Users\\Dell\\Downloads\\coursera\\machine-learning-coursera\\machine-learning-ex4\\machine-learning-ex4\\ex4-Neural\\ex4data1.mat")"""
-mat = sc.loadmat("F:\\From_C\\Downloads\\coursera\\machine-learning-coursera\\machine-learning-ex4\\machine-learning-ex4\\ex4\\ex4data1.mat")
+mat = sc.loadmat("F:\\data-images.mat")
 X = mat['X']
 
 
