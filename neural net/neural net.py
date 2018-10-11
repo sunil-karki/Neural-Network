@@ -167,8 +167,8 @@ def train_neural_network(x):
             print("random: ", arr)
             display_data(X[arr])
             
-            print("Prediction: ", (sess.run(tf.argmax(prediction,1), feed_dict={x: [X[arr]]}) ) )
-            print("Accuracy: ", (sess.run(accuracy, feed_dict={x: [X[arr]], y: [Y[arr]]})) )
+            print("Prediction: ", (sess.run(tf.argmax(prediction,1), feed_dict={x: [test_x[arr]]}) ) )
+            print("Accuracy: ", (sess.run(accuracy, feed_dict={x: [test_x[arr]], y: [test_y[arr]]})) )
 
             s = input("Paused; Enter 'e' & 'enter' to exit, 'enter' to continue: ")
             if s == 'e':
