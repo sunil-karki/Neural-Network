@@ -91,8 +91,8 @@ def neural_network_model(data):
 
     l1 = tf.add(tf.matmul(data, hidden_1_layer['weights']), hidden_1_layer['biases'])
     #rectified linear: relu
-    #l1 = tf.nn.relu(l1)  """Not accurate or perfect as sigmoid"""
-    #l1 = tf.nn.softmax(l1)  """Not very good either"""
+    #l1 = tf.nn.relu(l1)  
+    #l1 = tf.nn.softmax(l1)  
     l1 = tf.nn.sigmoid(l1)
                         
     """ l2 = tf.add(tf.matmul(l1, hidden_2_layer['weights']), hidden_2_layer['biases'])
